@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header id="name">
+        <h1>Web App Development </h1>
+    </header>
+    <main>
+        <button onclick="ChangeText()">changeName</button>
+    </main>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+    <ol>
+        <li>Python</li>
+        <li>Java</li>
+        <li>React</li>
+    </ol>
+    <script>
+        let header = document.getElementById("name");
+        header.style.color = "blue";
+        function ChangeText(){
+            document.getElementById("name").innerHTML = "<h1>Weclome to React Application</h1>";
+        }
+        let listItems = document.getElementsByTagName("li");
+        for(let i=0; i<listItems.length; i++){
+            listItems[i].style.color = "red";
+        }
+    </script>
+</body>
+</html>
