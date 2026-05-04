@@ -9,13 +9,21 @@ npx create-react-app@latest app2
 ```
 Their are 2 types of Components in ReactJS
 1. Class based
-2. Functional based
+   i. import statement
+   ii. class statement
+   iii. export statement
 ```
-class <className> extends Component {
+import React, {Component} from "react";
+class comp1 extends Component {
     render() {
         return {
-            <div> ... </div>
+            <div> welcome </div>
+            <h1> this component 1</h1>
         }
     }
 }
+export default comp1;
 ```
+
+3. Functional based
+
