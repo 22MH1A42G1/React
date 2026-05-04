@@ -45,5 +45,5 @@ iii) atlast run this application
 npm start
 ```
 
-3. Functional based
+2. Functional based
 
