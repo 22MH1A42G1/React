@@ -44,6 +44,8 @@ iii) atlast run this application
 ```
 npm start
 ```
+after output is
+<img width="1359" height="635" alt="image" src="https://github.com/user-attachments/assets/f79f4352-2075-4abb-b272-82c566613049" />
 
 2. Functional based
 
