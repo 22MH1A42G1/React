@@ -7,6 +7,21 @@ Day03: [notes](Day03.md)
 
 Day04: [notes](Day04.md)
 
+---
+
+completed topics
+----------------
+
+1. what is react?
+2. single page application (index.html in public folder)
+3. installation process
+4. project creation
+5. components
+6. class, functional
+7. class component creation
+
+---
+
 Day05: [notes](Day05.md)
 
 Day06: [notes](Day06.md)
@@ -22,3 +37,4 @@ Day10: [notes](Day10.md)
 Day11: [notes](Day11.md)
 
 Day12: [notes](Day12.md)
+
