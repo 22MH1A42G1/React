@@ -14,8 +14,13 @@ completed topics
 
 1. what is react?
 2. single page application (index.html in public folder)
+   - understanding single page applications(index.js, app.js)
 3. installation process
+   - create-react-app@latest
 4. project creation
+   - node modules -- required modules to develop applications
+   - public  -- here files are public
+   - src  -- here develop write entire application code
 5. components
 6. class, functional
 7. class component creation
