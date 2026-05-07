@@ -6,6 +6,7 @@ import Comp3 from './Comp3';
 import Comp4 from './Comp4';
 import Parent from './Parent';
 import Counter from './Counter';
+import Event1 from './Event1';
 function App() {
     return (
         <div className="App">
@@ -18,6 +19,7 @@ function App() {
             <Comp4 />
             <Parent />
             <Counter />
+            <Event1 />
         </div>
     );
 }
