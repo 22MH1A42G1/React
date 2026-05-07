@@ -40,6 +40,21 @@ function App() {
 
 export default App;
 ```
+and also change style in **App.css**
+```
+....
+.App-header {
+  background-color: #282c34;
+  min-height: 0; // change 100vh to 0 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+....
+```
 iii) atlast run this application
 ```
 npm start
