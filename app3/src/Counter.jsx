@@ -7,14 +7,19 @@ class Counter extends Component {
             count: 0
         }
     }
-    Increment() {
+    Increment=() => {
         this.setState({  // setState is used to update the state of the component
             count: this.state.count + 1
         });
     }
-    Decrement() {
+    Decrement=() => {
         this.setState({ // setState is used to update the state of the component
             count: this.state.count - 1
+        });
+    }
+    Reset=() => {
+        this.setState({ // setState is used to update the state of the component
+            count: 0
         });
     }
   render() {
@@ -22,8 +27,11 @@ class Counter extends Component {
       <div>
         <h1>Counter</h1>
         <p>Count: {this.state.count}</p>
-        <button onClick={() => this.Increment()}>  Increment(+) </button>
-        <button onClick={() => this.Decrement()}>  Decrement(-) </button>
+        {/* onClick is an event handler that is called when the button is clicked */}
+        <button onClick={this.Increment}>  Increment(+) </button>
+        <button onClick={this.Decrement} disabled={this.state.count === 0}>  Decrement(-) </button> {/* disable the decrement button when count is 0 */}
+        <button onClick={this.Reset}>  Reset(#) </button>
+
       </div>
     )
   }
