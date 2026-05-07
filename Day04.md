@@ -50,6 +50,22 @@ class Comp2 extends Component{
 }
 export default Comp2;
 ```
+**Comp3.jsx**
+```
+import React, {Component} fromm "react";
+class Comp3 extends Component{
+     cid = "1001";
+     student = {cname:"React", fee:5500};
+     render(){
+            return (
+                 <div>
+                     <h3>Course id : {this.cid} | Name : {this.student.cname} | {this.student.fee}</h3>
+                  </div>
+            )
+     }
+}
+export default Comp3;
+```
 **App.js**
 ```
 import logo from './logo.svg';
@@ -64,6 +80,7 @@ function App() {
             </header>
             <Comp1 />
             <Comp2 />
+            <Comp3 />
         </div>
     );
 }
