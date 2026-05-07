@@ -24,13 +24,13 @@ npm start
 
 
 and now we create new component for we just **Comp1.jsx** in /src folder:
+
 **Comp1.jsx**
 ```
-import React, {Component} fromm "react";
+import React, {Component} from "react";
 class Comp1 extends Component{
      render(){
             return (
-                 <h3>Component1</h3>
                  <h3>Component1</h3>
             )
      }
@@ -39,11 +39,10 @@ export default Comp1;
 ```
 **Comp2.jsx**
 ```
-import React, {Component} fromm "react";
+import React, {Component} from "react";
 class Comp2 extends Component{
      render(){
             return (
-                 <h3>Component2</h3>
                  <h3>Component2</h3>
             )
      }
@@ -52,7 +51,7 @@ export default Comp2;
 ```
 **Comp3.jsx**
 ```
-import React, {Component} fromm "react";
+import React, {Component} from "react";
 class Comp3 extends Component{
      cid = "1001";
      student = {cname:"React", fee:5500};
@@ -85,4 +84,19 @@ function App() {
     );
 }
 export default App;
+```
+and also change style in **App.css**
+```
+....
+.App-header {
+  background-color: #282c34;
+  min-height: 0; // change 100vh to 0 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+....
 ```
