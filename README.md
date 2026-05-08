@@ -25,3 +25,6 @@ Day12: [notes](Day12.md)  - 05/05/2026
 
 Day13: [notes](Day13.md)  - 06/05/2026
 
+Day14: [notes](Day14.md)  - 07/05/2026
+
+Day15: [notes](Day15.md)  - 08/05/2026
