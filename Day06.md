@@ -84,4 +84,41 @@ export default class GetCourse2 extends Component {
 
 ---
 
+**ReadText.jsx**
+```
+import React, { Component } from 'react'
+
+class ReadText extends Component {
+    constructor(){
+        super();
+        this.state={
+            courseName:""
+        }
+    }
+
+    readCourse=(e)=>{
+        console.log(e);
+        console.log(e.target);
+        console.log(e.target.value);
+        // this.setState({ // setState is used to update the state of the component
+        //     courseName:e.target.value
+        // })
+    }
+  render() {
+    return (
+      <div>
+        <h1>Course: {this.state.courseName} </h1>
+        <input type="text" id="" onChange={this.readCourse}/>
+        <button>Read</button>
+      </div>
+    )
+  }
+}
+export default ReadText;
+```
+
+- event, event.target, event.target.value (without setState)
+<img width="684" height="681" alt="image" src="https://github.com/user-attachments/assets/91d4f3cb-9af4-4a70-87da-4622f7729905" />
+- event, event.target, event.target.value (with setState)
+<img width="682" height="719" alt="image" src="https://github.com/user-attachments/assets/1eb65ad3-e9ab-4b1d-aa98-747c33615568" />
 
