@@ -10,7 +10,7 @@ App.js
 --------------------------------------------------
 ```
 
-First, create a `Todo.jsx` component.
+Create a `Todo.jsx` component.
 
 1.  Initialize the component's state in the constructor:
 
@@ -24,24 +24,60 @@ constructor(){
 }
 ```
 
-2. Implement the following methods within the class: `readCourse`, `addCourse`, and `deleteCourse`.
+2. Implement `readCourse`, `addCourse`, and `deleteCourseByIndex`, and `deleteCourseByCourseName` methods:
 
 ```javascript
-readCourse=(e)=>{
-    this.setState({
-        course:e.target.value // Updates the state with the input value
-    })
+import React, { Component } from 'react'
+
+class Todo extends Component {
+    constructor(){
+        super();
+        this.state={
+            course:'',
+            courses:[]
+        }
+    }
+    readCourse=(e)=>{
+        this.setState({
+            course:e.target.value
+        })
+    }
+    addCourse=()=>{
+        if (this.state.course.trim() === "") return;
+        this.setState({
+            courses:[...this.state.courses,this.state.course],
+            course:''
+        })
+    }
+    deleteCourseByIndex=(index)=>{
+        const Newourses=this.state.courses.filter((_,i)=>i!==index);
+        this.setState({courses:Newourses});
+    }
+    deleteCourseByCourseName=(courseName)=>{
+        const Newourses=this.state.courses.filter((course)=>course!==courseName);
+        this.setState({courses:Newourses});
+    }
+  render() {
+    return (
+      <div>
+        <label htmlFor="course">Course : </label>
+        <input type="text" id="course" onChange={this.readCourse} />
+        <button onClick={this.addCourse}>Add</button>
+        <ul>
+            {
+                this.state.courses.map((course,index)=>(
+                    <li key={index}>{course}
+                        <button onClick={this.deleteCourseByIndex.bind(this,index)}>DeleteByIndex</button>
+                        <button onClick={this.deleteCourseByCourseName.bind(this,course)}>DeleteByCourseName</button>
+                    </li>
+                ))
+            }
+        </ul>
+      </div>
+    )
+  }
 }
-addCourse=()=>{
-    this.setState({
-        courses:[...this.state.courses,this.state.course], // Adds the new course to the courses array
-        course:'' // Resets the input field
-    })
-}
-deleteCourse=(index)=>{
-    const Newourses=this.state.courses.filter((course,i)=>i!==index);
-    this.setState({courses:Newourses});
-}
+export default Todo;
 ```
 
-3. Within the component's `render` method, include a label and input field for the course, with `onChange` set to `readCourse`.
+3.  In the `render` method, include a label and input field for the course, setting the `onChange` event to `readCourse`.
