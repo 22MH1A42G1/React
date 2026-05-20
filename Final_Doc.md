@@ -1,5 +1,5 @@
-## Day 01
-
+# Day 01
+---
 # React
 React is a JavaScript library for building user interfaces (UIs) on the web. React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/5c3df556-db0d-4854-bd56-7d830d020692" />
@@ -7,9 +7,9 @@ React is a JavaScript library for building user interfaces (UIs) on the web. Rea
 # DOM 
 The HTML DOM (Document Object Model) is a structured representation of a web page that allows developers to access, modify, and control its content and structure using JavaScript. It powers most dynamic website interactions, enabling features like real-time updates, form validation, and interactive user interface
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/62c57d7c-6852-416b-9a9e-2e1b275d307d" />
-
+---
 ## Day 02
-
+---
 ## What is React?
 - it is a js library to develop UI
 
@@ -41,9 +41,9 @@ cd app1
 ```
 npm start
 ```
-
+---
 ## Day 03
-
+---
 # cmd
 >> first you can check version
 ```
@@ -110,9 +110,9 @@ after output is
 
 2. Functional based
 
-
+---
 # Day 04
-
+---
 checking version
 ````
 node -v
@@ -306,12 +306,13 @@ function App() {
 export default App;
 ```
 
-output is 
+>> output is 
+
 <img width="683" height="535" alt="image" src="https://github.com/user-attachments/assets/c4927256-1b95-4c23-a6dc-519d87230d5f" />
 
-
+---
 ## Day 05
-
+---
 ### templates
 
 This HTML file is a template.
@@ -378,13 +379,13 @@ completed topics
       1. click -- Onclick increment & decrement using `setState`
          eg: [Counter.jsx](app3/src/Counter.jsx),
              [Event.jsx](app3/src/Event1.jsx)
-
-  ## Day 06
-
+---
+## Day 06
+---
 ### events
 
 <img width="768" height="384" alt="image" src="https://github.com/user-attachments/assets/7ebb0172-d260-4256-9e7e-30917ef5c9f6" />
-
+<br>
 - events are user actions on application inside the browser.
 
 **setState**
@@ -412,12 +413,22 @@ Name |    a             |
                      |--> onChange(function)
 ```
 1. before page
+
 <img width="684" height="339" alt="image" src="https://github.com/user-attachments/assets/37cd191c-5af5-40b7-863e-fcc1417a33be" />
+<br>
+
 2. after click on add React
+
 <img width="677" height="329" alt="image" src="https://github.com/user-attachments/assets/1da99fb7-d7bf-4437-8bdb-dfb70f62542e" />
+<br>
+
 3. after click on add java script
+
 <img width="658" height="283" alt="image" src="https://github.com/user-attachments/assets/591376c7-1051-4e1a-a3ce-9887d761a994" />
+<br>
+
 4. after clicking reset course
+
 <img width="679" height="371" alt="image" src="https://github.com/user-attachments/assets/eefca372-65f5-4382-aeed-224797abe20d" />
 
 ---
@@ -461,8 +472,11 @@ export default class GetCourse2 extends Component {
 
 ```
 1. after click on button react
+
 <img width="1283" height="495" alt="image" src="https://github.com/user-attachments/assets/d3971460-9ede-40de-9a0e-5f043c7e00b9" />
+
 2. all buttons clicked after
+
 <img width="1363" height="428" alt="image" src="https://github.com/user-attachments/assets/f7d10f4e-f4d5-493f-a55d-ac1517b072f1" />
 
 ---
@@ -501,6 +515,86 @@ export default ReadText;
 ```
 
 - event, event.target, event.target.value (without setState)
+<br>
 <img width="684" height="681" alt="image" src="https://github.com/user-attachments/assets/91d4f3cb-9af4-4a70-87da-4622f7729905" />
+
 - event, event.target, event.target.value (with setState)
 <img width="682" height="719" alt="image" src="https://github.com/user-attachments/assets/1eb65ad3-e9ab-4b1d-aa98-747c33615568" />
+
+---
+# Day 07
+---
+## Component implementation:
+
+1.  Initialize the component's state with `course` and `courses` in the constructor:
+
+```javascript
+constructor(){
+  super()
+  this.state= {
+    course:'',
+    courses:[]
+  }
+}
+```
+
+2. Implement `readCourse`, `addCourse`, `deleteCourseByIndex`, and `deleteCourseByCourseName` methods:
+
+```javascript
+import React, { Component } from 'react'
+
+class Todo extends Component {
+    constructor(){
+        super();
+        this.state={
+            course:'',
+            courses:[]
+        }
+    }
+    readCourse=(e)=>{
+        this.setState({ course: e.target.value })
+    }
+    addCourse=()=>{
+        const trimmedCourse = this.state.course.trim();
+        if (!trimmedCourse) return;
+        this.setState({
+            courses:[...this.state.courses, trimmedCourse],
+            course:''
+        })
+    }
+    deleteCourseByIndex=(index)=>{
+        const updatedCourses = this.state.courses.filter((_,i)=>i!==index);
+        this.setState({ courses: updatedCourses });
+    }
+    deleteCourseByCourseName=(courseName)=>{
+        const updatedCourses = this.state.courses.filter((course)=>course!==courseName);
+        this.setState({ courses: updatedCourses });
+    }
+  render() {
+    return (
+      <div>
+        <label htmlFor="course">Course : </label>
+        <input type="text" id="course" onChange={this.readCourse} />
+        <button onClick={this.addCourse}>Add</button>
+        <ul>
+            {
+                this.state.courses.map((course,index)=>(
+                    <li key={index}>{course}
+                        <button onClick={this.deleteCourseByIndex.bind(this,index)}>DeleteByIndex</button>
+                        <button onClick={this.deleteCourseByCourseName.bind(this,course)}>DeleteByCourseName</button>
+                    </li>
+                ))
+            }
+        </ul>
+      </div>
+    )
+  }
+}
+export default Todo;
+```
+
+3.  Within the `render` method, include a label and input field for the course, binding the `onChange` event to `readCourse`. Also, include `onClick` event for `addCourse`, `deleteCourseByIndex` and `deleteCourseByCourseName` methods.
+
+4.  output
+   <img width="1098" height="498" alt="image" src="https://github.com/user-attachments/assets/63808db9-3fe6-4b93-9a63-1d52bcd15d22" />
+
