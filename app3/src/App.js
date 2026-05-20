@@ -9,7 +9,8 @@ import './App.css';
 // import Event1 from './Event1';
 // import GetCourse2 from './GetCourse2';
 // import ReadText from './ReadText';
-import Todo from './Todo';
+// import Todo from './Todo';
+import CondRend1 from './CondRend1';
 function App() {
     return (
         <div className="App">
@@ -17,7 +18,8 @@ function App() {
               <h3>React Application</h3>
             </header>
             {/* <ReadText /> */}
-            <Todo />
+            {/* <Todo /> */}
+            <CondRend1 />
         </div>
     );
 }
