@@ -28,3 +28,15 @@ Day13: [notes](Day13.md)  - 06/05/2026
 Day14: [notes](Day14.md)  - 07/05/2026
 
 Day15: [notes](Day15.md)  - 08/05/2026
+
+Day16: [notes](Day16.md)  - 11/05/2026
+
+Day17: [notes](Day17.md)  - 12/05/2026
+
+Day18: [notes](Day18.md)  - 13/05/2026
+
+Day19: [notes](Day19.md)  - 14/05/2026
+
+Day20: [notes](Day20.md)  - 15/05/2026
+
+final-doc: [notes](Final_Doc.md)  
