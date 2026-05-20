@@ -1,6 +1,6 @@
-Day 07
+# Day 07
 
-Component implementation:
+## Component implementation:
 
 1.  Initialize the component's state with `course` and `courses` in the constructor:
 
