@@ -70,3 +70,7 @@ export default Todo;
 ```
 
 3.  Within the `render` method, include a label and input field for the course, binding the `onChange` event to `readCourse`. Also, include `onClick` event for `addCourse`, `deleteCourseByIndex` and `deleteCourseByCourseName` methods.
+
+4.  output
+   <img width="1098" height="498" alt="image" src="https://github.com/user-attachments/assets/63808db9-3fe6-4b93-9a63-1d52bcd15d22" />
+
