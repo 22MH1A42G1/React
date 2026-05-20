@@ -1,3 +1,5 @@
+## Day 06
+
 ### events
 
 <img width="768" height="384" alt="image" src="https://github.com/user-attachments/assets/7ebb0172-d260-4256-9e7e-30917ef5c9f6" />
