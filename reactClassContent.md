@@ -28,6 +28,11 @@ completed topics
 10. events handling
     - events are user actions on application inside the browser.
       1. click -- Onclick increment & decrement using `setState`
+
          eg: [Counter.jsx](app3/src/Counter.jsx),
              [Event.jsx](app3/src/Event1.jsx),
              [Todo.jsx](app3/src/Todo.jsx)
+
+11. passing list and keys
+12. handling list and keys
+13. conditional rendering
