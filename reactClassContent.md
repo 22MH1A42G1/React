@@ -36,3 +36,13 @@ completed topics
 11. passing list and keys
 12. handling list and keys
 13. conditional rendering
+14. style components
+    i. inline
+    ii. internal
+    iii. external
+15. how to use bootstrap in react?
+16. how to use images in react?
+17. reading form data like login?
+18. context API
+19. Errors in react
+20. call back function in class components
