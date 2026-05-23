@@ -112,6 +112,9 @@ Here are clear notes on **Style Components in React** — covering inline, inter
 ✨ **Summary:**
 - **Inline** → Quick, scoped to one element.  
 - **Internal** → Styles grouped within the component file.  
-- **External** → Best for scalability, reusable across components.  
+- **External** → Best for scalability, reusable across components.
 
+--- 
+
+**Bootstrap in react**
 
