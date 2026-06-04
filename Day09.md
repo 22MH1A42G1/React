@@ -1,6 +1,16 @@
-# day09
+# Day 09 - React Styling Notes
 
-1.  **Inline CSS:**
+This note explains React styling step by step using:
+- Inline CSS
+- Internal CSS
+- External CSS
+- Bootstrap CSS
+
+---
+
+## 1) Inline CSS
+
+### Example 1: Direct inline style
 
 ```jsx
 import React, { Component } from 'react'
@@ -17,7 +27,16 @@ class StyleComp1 extends Component {
 export default StyleComp1;
 ```
 
-2.  **Styling with variable objects (inline):**
+### Output
+- Text color is **red**
+- Background is **aquamarine**
+- Font size is **30px**
+
+<img width="393" height="310" alt="Inline CSS output" src="https://github.com/user-attachments/assets/b3dbcfa2-a7af-454d-9813-89e32c20daa3" />
+
+---
+
+### Example 2: Styling with variable objects (inline)
 
 ```jsx
 import React, { Component } from 'react'
@@ -40,81 +59,153 @@ class StyleComp2 extends Component {
 }
 export default StyleComp2;
 ```
-Here are clear notes on **Style Components in React** — covering inline, internal, and external approaches:
+
+### Output
+- First heading uses only `style1`
+- Second heading combines `style1` + `style2`
 
 ---
 
-# Style Components in React
+## 2) Internal CSS
 
-### i. **Inline Styling**
-- Styles are applied directly to elements using the `style` attribute.
-- Written as a JavaScript object inside JSX.
-- Property names use **camelCase** (e.g., `backgroundColor` instead of `background-color`).
-- Example:
-  ```jsx
-  <h3 style={{ color: 'red', backgroundColor: 'aquamarine' }}>Welcome</h3>
-  ```
+Internal CSS means writing style rules inside the same component file.
 
----
+```jsx
+import React from 'react';
 
-### ii. **Internal Styling**
-- Styles are defined inside the component file itself.
-- Two common approaches:
-  1. **Using `<style>` tag in JSX**:
-     ```jsx
-     <style>
-       {`
-         .heading {
-           color: blue;
-           font-size: 28px;
-         }
-       `}
-     </style>
-     <h3 className="heading">Internal CSS Example</h3>
-     ```
-  2. **CSS-in-JS (object inside component)**:
-     ```jsx
-     const styles = {
-       heading: {
-         color: 'blue',
-         backgroundColor: 'lightgray',
-         fontSize: '28px'
-       }
-     }
-     <h3 style={styles.heading}>Internal CSS Example</h3>
-     ```
+function StyleCompInternal() {
+  return (
+    <>
+      <style>
+        {`
+          .internalHeading {
+            color: blue;
+            background-color: lightyellow;
+            font-size: 28px;
+            padding: 8px;
+          }
+        `}
+      </style>
+
+      <h3 className="internalHeading">Internal CSS Example</h3>
+    </>
+  );
+}
+
+export default StyleCompInternal;
+```
+
+### Output
+- Heading is styled using class-based CSS in the same file.
 
 ---
 
-### iii. **External Styling**
-- Styles are written in a separate `.css` file and imported into the component.
-- Cleaner and more maintainable for larger projects.
-- Example:
-  - **App.css**
-    ```css
-    .heading {
-      color: green;
-      background-color: yellow;
-      font-size: 26px;
-    }
-    ```
-  - **App.js**
-    ```jsx
-    import './App.css';
+## 3) External CSS
 
-    function App() {
-      return <h3 className="heading">External CSS Example</h3>;
-    }
-    ```
+External CSS means creating styles in a separate file and importing it.
+
+### `StyleCompExternal.css`
+
+```css
+.externalHeading {
+  color: green;
+  background-color: #fff3cd;
+  font-size: 26px;
+  padding: 8px;
+  border: 1px solid #f0ad4e;
+}
+```
+
+### `StyleCompExternal.jsx`
+
+```jsx
+import React from 'react';
+import './StyleCompExternal.css';
+
+function StyleCompExternal() {
+  return <h3 className="externalHeading">External CSS Example</h3>;
+}
+
+export default StyleCompExternal;
+```
+
+### Output
+- Styling is managed in a separate CSS file.
+- Best for reusability and large projects.
 
 ---
 
-✨ **Summary:**
-- **Inline** → Quick, scoped to one element.  
-- **Internal** → Styles grouped within the component file.  
-- **External** → Best for scalability, reusable across components.
+## 4) Bootstrap CSS in React
 
---- 
+Bootstrap gives ready-made classes for layout and styling.
 
-**Bootstrap in react**
+### Step 1: Install Bootstrap
 
+```bash
+npm install bootstrap
+```
+
+### Step 2: Import Bootstrap in `src/index.js`
+
+```jsx
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+### Step 3: Use Bootstrap classes
+
+```jsx
+import React from 'react';
+
+function StyleCompBootstrap() {
+  return (
+    <div className="container mt-4">
+      <h3 className="text-primary">Bootstrap Styling</h3>
+      <button className="btn btn-success">Save</button>
+      <button className="btn btn-danger ms-2">Delete</button>
+    </div>
+  );
+}
+
+export default StyleCompBootstrap;
+```
+
+### Output
+- `text-primary` makes heading blue.
+- `btn btn-success` and `btn btn-danger` give styled buttons.
+- `ms-2` adds spacing between buttons.
+
+<img width="640" height="360" alt="Bootstrap output" src="./app2/Screenshot%202026-05-04%20161458.jpg" />
+
+---
+
+## Step-by-step commands to practice now
+
+```bash
+# 1) Create app
+npx create-react-app app9-styling
+
+# 2) Move into app
+cd app9-styling
+
+# 3) Start React app
+npm start
+
+# 4) Create components and CSS files in src/
+#    StyleComp1.jsx, StyleComp2.jsx, StyleCompInternal.jsx,
+#    StyleCompExternal.jsx, StyleCompExternal.css
+
+# 5) For Bootstrap example
+npm install bootstrap
+
+# 6) Import bootstrap in src/index.js
+#    import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+---
+
+## Quick Summary
+
+- **Inline CSS**: Fast for single elements.
+- **Internal CSS**: Useful when you want CSS inside one component file.
+- **External CSS**: Best for clean and scalable styling.
+- **Bootstrap CSS**: Fast UI development using prebuilt classes.
