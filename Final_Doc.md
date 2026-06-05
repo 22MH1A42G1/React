@@ -13,7 +13,7 @@ The HTML DOM (Document Object Model) is a structured representation of a web pag
 ## What is React?
 - it is a js library to develop UI
 
-**React Application Creation Steps**
+#### React Application Creation Steps
 
 1. run this commnad for checking node working or not
 ```
@@ -44,17 +44,19 @@ npm start
 ---
 ## Day 03
 ---
-# cmd
->> first you can check version
+#### First, check the version.
 ```
 node -v
 ```
->> after create your app
+
+#### after create your app
 ```
 npx create-react-app@latest app2
 ```
+
 Their are 2 types of Components in ReactJS
-1. Class-based
+
+#### 1. Class-based
    
 i) import, class, and export statements.
 ```
@@ -68,6 +70,7 @@ class Comp1 extends Component {
 }
 export default Comp1;
 ```
+#### 2. Functional based
 
 ii) after import app.js
 ```
@@ -108,7 +111,7 @@ npm start
 after output is
 <img width="1359" height="635" alt="image" src="https://github.com/user-attachments/assets/f79f4352-2075-4abb-b272-82c566613049" />
 
-2. Functional based
+
 
 ---
 # Day 04
