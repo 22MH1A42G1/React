@@ -65,8 +65,9 @@ export default StyleComp2;
 
 ### Output
 - First heading uses only `style1`
-- Second heading combines `style1` + `style2`
-  <img width="317" height="234" alt="image" src="https://github.com/user-attachments/assets/013517be-8a70-477d-9663-67b8e5fb5aaa" />
+- Second heading combines `style1` + `style2` + `style3`
+
+<img width="317" height="234" alt="image" src="https://github.com/user-attachments/assets/013517be-8a70-477d-9663-67b8e5fb5aaa" />
 
 
 ---
@@ -181,7 +182,7 @@ export default StyleCompBootstrap;
 - `btn btn-success` and `btn btn-danger` give styled buttons.
 - `ms-2` adds spacing between buttons.
 
-<img width="640" height="360" alt="Bootstrap output" src="./app2/Screenshot%202026-05-04%20161458.jpg" />
+<img width="288" height="185" alt="image" src="https://github.com/user-attachments/assets/5d5e0023-2d26-4888-9a1f-3aa8ef26e2b0" />
 
 ---
 
