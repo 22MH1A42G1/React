@@ -126,3 +126,4 @@ export default Comp105
 - **Problem**: Passing props through multiple levels (prop drilling) becomes repetitive and hard to manage.
 
 - **Solution**: Context API allows sharing data globally without manually passing props at each level.
+<img width="432" height="418" alt="image" src="https://github.com/user-attachments/assets/d2bfb3a5-6b93-4431-baa7-78fc4a1f0ef8" />
