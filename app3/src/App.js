@@ -10,7 +10,18 @@ import './App.css';
 // import GetCourse2 from './GetCourse2';
 // import ReadText from './ReadText';
 // import Todo from './Todo';
-import CondRend1 from './CondRend1';
+// import CondRend1 from './CondRend1';
+// import CondRend2 from './CondRend2';
+// import CondRend3 from './CondRend3';
+// import CondRend4 from './CondRend4';
+// import CondRend5 from './CondRend5';
+// import StyleComp1 from './StyleComp1';
+// import StyleComp2 from './StyleComp2';
+// import StyleComp3 from './StyleComp3';
+// import BSComp1 from './BSComp1';
+// import ImgComp1 from './ImgComp1';
+// import Login from './Login';
+import SignUP from './SignUP';
 function App() {
     return (
         <div className="App">
@@ -19,7 +30,12 @@ function App() {
             </header>
             {/* <ReadText /> */}
             {/* <Todo /> */}
-            <CondRend1 />
+            {/* <CondRend5 /> */}
+            {/* <StyleComp3 /> */}
+            {/* <BSComp1 /> */}
+            {/* <ImgComp1 /> */}
+            {/* <Login /> */}
+            <SignUP />
         </div>
     );
 }
