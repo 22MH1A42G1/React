@@ -71,7 +71,7 @@ export default Login
 #### output
 <img width="685" height="365" alt="image" src="https://github.com/user-attachments/assets/fa5478a1-8769-47f8-b2c0-34b5ee3df353" />
 
-#### 2. SignUP
+### Store signup data in local storage.
 
 ```jsx
 import React, { Component } from 'react'
