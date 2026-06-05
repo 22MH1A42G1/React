@@ -44,6 +44,6 @@ completed topics
 16. - [x] how to use images in react?
 17. - [x] reading form data like login?
 18.  - [x] storing signup data  into local storage
-19. - [ ] context API
+19. - [x] context API
 20. - [ ] Errors in react
 21. - [ ] call back function in class components
