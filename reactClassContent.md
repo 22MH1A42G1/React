@@ -43,7 +43,7 @@ completed topics
 15. - [x] how to use bootstrap in react?
 16. - [x] how to use images in react?
 17. - [x] reading form data like login?
-    - [ ] storing signup data  into local storage
-18. - [ ] context API
-19. - [ ] Errors in react
-20. - [ ] call back function in class components
+18.  - [ ] storing signup data  into local storage
+19. - [ ] context API
+20. - [ ] Errors in react
+21. - [ ] call back function in class components
