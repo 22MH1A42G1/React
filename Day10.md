@@ -7,7 +7,7 @@ This is done using **state** and **event handlers**.
 
 ---
 
-#### 1. login
+#### login
 
 ```jsx
 import React, { Component } from 'react'
