@@ -47,12 +47,15 @@ class StyleComp2 extends Component {
         color:'red'
     }
     const style2 = {
-        backgroundColor:'aquamarine'
+        backgroundColor:'aquamarine',
+    }
+    const style3 = {
+      fontSize:'30px'
     }
     return (
       <div>
-        <h3 style={style1}>Welcome</h3>  {/* using style1 object */}
-        <h3 style={{...style1,...style2}}>React app</h3> {/* using spread operator to combine style1 and style2 objects */}
+        <h3 style={style1}>Welcome</h3> {/* using style1 object */}
+        <h3 style={{...style1,...style2, ...style3}}>React app</h3>{/* using spread operator to combine style1 and style2 objects */}
       </div>
     )
   }
@@ -63,7 +66,8 @@ export default StyleComp2;
 ### Output
 - First heading uses only `style1`
 - Second heading combines `style1` + `style2`
-<img width="366" height="281" alt="image" src="https://github.com/user-attachments/assets/4a58a057-c91e-4714-b96f-f9b9944cb67d" />
+  <img width="317" height="234" alt="image" src="https://github.com/user-attachments/assets/013517be-8a70-477d-9663-67b8e5fb5aaa" />
+
 
 ---
 
@@ -98,6 +102,7 @@ export default StyleCompInternal;
 
 ### Output
 - Heading is styled using class-based CSS in the same file.
+<img width="363" height="222" alt="image" src="https://github.com/user-attachments/assets/7e57b662-a28e-44b0-bbc6-fa16a04c1df9" />
 
 ---
 
