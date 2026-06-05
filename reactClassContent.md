@@ -42,7 +42,8 @@ completed topics
     iii. external
 15. - [x] how to use bootstrap in react?
 16. - [x] how to use images in react?
-17. - [ ] reading form data like login?
+17. - [x] reading form data like login?
+    - [ ] storing signup data  into local storage
 18. - [ ] context API
 19. - [ ] Errors in react
 20. - [ ] call back function in class components
