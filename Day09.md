@@ -129,7 +129,7 @@ import React from 'react';
 import './StyleCompExternal.css';
 
 function StyleCompExternal() {
-  return <h3 className="externalHeading">External CSS Example</h3>;
+  return <h3 className="externalHeading">Welcome</h3>;
 }
 
 export default StyleCompExternal;
