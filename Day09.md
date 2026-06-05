@@ -138,6 +138,7 @@ export default StyleCompExternal;
 ### Output
 - Styling is managed in a separate CSS file.
 - Best for reusability and large projects.
+<img width="313" height="203" alt="image" src="https://github.com/user-attachments/assets/2063e131-6fee-409e-b0d6-75ec92d4584d" />
 
 ---
 
