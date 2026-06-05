@@ -63,6 +63,7 @@ export default StyleComp2;
 ### Output
 - First heading uses only `style1`
 - Second heading combines `style1` + `style2`
+<img width="366" height="281" alt="image" src="https://github.com/user-attachments/assets/4a58a057-c91e-4714-b96f-f9b9944cb67d" />
 
 ---
 
