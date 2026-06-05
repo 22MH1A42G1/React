@@ -160,7 +160,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
 ### Step 3: Use Bootstrap classes
-
+1. Buttons 
 ```jsx
 import React from 'react';
 
@@ -183,6 +183,29 @@ export default StyleCompBootstrap;
 - `ms-2` adds spacing between buttons.
 
 <img width="288" height="185" alt="image" src="https://github.com/user-attachments/assets/5d5e0023-2d26-4888-9a1f-3aa8ef26e2b0" />
+
+2. Images
+```jsx
+import React, { Component } from 'react'
+import wallpaper1 from './img/wallpaper1.jpg';
+class ImgComp1 extends Component {
+  render() {
+    return (
+      <div>
+        <h3>Image Component</h3>
+        <img src={wallpaper1} alt='Trulli' width={500} height={300} />
+      </div>
+    )
+  }
+}
+export default ImgComp1;
+```
+
+### Output
+- It renders a heading Image Component.
+- It shows the image wallpaper1.jpg at 500px × 300px.
+
+<img width="647" height="473" alt="image" src="https://github.com/user-attachments/assets/4e4a62d0-6e77-4da8-b90b-70eebbd23b80" />
 
 ---
 
