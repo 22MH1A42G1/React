@@ -258,7 +258,7 @@ and also change style in **App.css**
 
 ---
 
-# Props
+## Props
 Props are used to transfer data from one component's state to another.
 
 In React, props (short for "properties") are used to pass information from one component to another. The main purpose of props is to allow a parent component to send data to its child components.
