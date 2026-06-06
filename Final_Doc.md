@@ -1318,7 +1318,7 @@ Instead of passing props manually from `Comp101 → Comp102 → Comp103 → Comp
 
 ## 💻 Code
 
-### Comp101.jsx
+> Comp101.jsx
 ```jsx
 import React, { Component } from 'react'
 import Comp102 from './Comp102';
@@ -1357,11 +1357,11 @@ export class Comp101 extends Component {
 export default Comp101
 ```
 
-### Comp102.jsx → Comp103.jsx → Comp104.jsx
+> Comp102.jsx → Comp103.jsx → Comp104.jsx
 ```jsx
 // Each just renders heading and passes control down
 ```
-### Comp105.jsx
+> Comp105.jsx
 
 ```jsx
 import React, { Component } from 'react'
