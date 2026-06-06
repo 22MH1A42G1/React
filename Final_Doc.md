@@ -1,4 +1,4 @@
-## Day 01
+# Day 01
 ---
 
 ## React
@@ -15,7 +15,7 @@ The HTML DOM (Document Object Model) is a structured representation of a web pag
 
 ---
 
-## Day 02
+# Day 02
 ---
 
 ## What is React?
@@ -50,7 +50,7 @@ cd app1
 npm start
 ```
 ---
-## Day 03
+# Day 03
 ---
 #### First, check the version.
 ```
