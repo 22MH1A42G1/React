@@ -322,7 +322,7 @@ export default App;
 <img width="683" height="535" alt="image" src="https://github.com/user-attachments/assets/c4927256-1b95-4c23-a6dc-519d87230d5f" />
 
 ---
-## Day 05
+# Day 05
 ---
 ### templates
 
@@ -393,7 +393,7 @@ completed topics
 
 ---
 
-## Day 06
+# Day 06
 ---
 
 ### events
@@ -1035,7 +1035,7 @@ npm install bootstrap
 
 ---
 
-## Day 10
+# Day 10
 ---
 
 ### Reading Form Data (Login Example)
@@ -1178,7 +1178,7 @@ export default SignUP
 <img width="671" height="359" alt="image" src="https://github.com/user-attachments/assets/c49f5dd3-d2bc-44c4-b849-067c8c7f0dc9" />
 ---
 
-### Day 11
+# Day 11
 ---
 
 ## Data transfer by using Props & State 
