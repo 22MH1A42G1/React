@@ -91,10 +91,8 @@ export default ErrComp1
 <img width="566" height="350" alt="image" src="https://github.com/user-attachments/assets/4e4b402e-c8cd-4f44-9455-190ccd9d5815" />
 
 ---
+## React Class Components Callback Functions
 
-## Call back fuctions
-
-### description
+### Description
 
 <img width="446" height="291" alt="image" src="https://github.com/user-attachments/assets/6476ff11-8438-4a78-8333-7034caf6a665" />
-
