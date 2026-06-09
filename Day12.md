@@ -185,4 +185,11 @@ When the app runs:
 
 - Callback functions help achieve **two‑way communication** between components.
 
-- Useful in forms, event handling, and dynamic UI updates.
+- **Use callback functions whenever:**
+
+  1. The **child needs to influence the parent’s state**.
+  2. You want to maintain **single source of truth** in the parent.
+  3. You need **two-way communication** between components.
+
+<img width="625" height="435" alt="image" src="https://github.com/user-attachments/assets/f7b44e1a-95e0-480a-b602-91f0cc0eefa4" />
+
