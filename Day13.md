@@ -150,6 +150,124 @@ npm -v
 ```
 npm create vite@latest
 ```
+3. remove bolerplatecode from `App.jsx`, `App.css`, `index.css` and after creteing own components that will connect with `App.jsx`.
+**App.jsx**
+```
+import './App.css'
+import Fcomp1 from './components/Fcomp1'
+import Fcomp2 from './components/Fcomp2'
+import Fcomp3 from './components/Fcomp3'
+import Fcomp4 from './components/Fcomp4'
+function App() {
+
+  return (
+    <>
+      <center>
+      <section id="center">
+        <h1>React + Vite Application</h1>
+      </section>
+      <Fcomp1 name="Aditya" />
+      <Fcomp2 name="Aditya" />
+      <Fcomp3 />
+      <Fcomp4 />
+      </center>
+    </>
+  )
+}
+
+export default App
+
+```
+**App.css**
+```
+
+
+#center {
+  display: flex;
+  flex-direction: column;
+  background-color: darkblue;
+  color: white;
+  font-size: 25px;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+```
+**Fcomp1.jsx**
+```
+import React from 'react'
+
+const Fcomp1 = (props) => {
+  return (
+    <div>     
+        <h1 style={{color:"red"}, {fontSize:"50px"}, {textAlign:"center"}}>Fcomp1 : {props.name}</h1>
+    </div>
+  )
+}
+export default Fcomp1
+```
+**Fcomp2.jsx**
+```
+import React from 'react'
+
+const Fcomp1 = (props) => {
+  return (
+    <div>     
+        <h1 style={{color:"red"}, {fontSize:"50px"}, {textAlign:"center"}}>Fcomp1 : {props.name}</h1>
+    </div>
+  )
+}
+export default Fcomp1
+```
+**Fcomp3.jsx**
+```
+import React, { useState} from 'react'
+
+const Fcomp3 = () => {
+    const [count, setCount] = useState(0)
+  return (
+    <div>
+      <h1>Fcomp3: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)} disabled={count === 0}>Decrement</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
+  )
+}
+
+export default Fcomp3
+```
+**Fcomp4.jsx**
+```
+import React, { useState } from 'react'
+
+const Fcomp4 = () => {
+  const [name, setName] = useState("Aditya");
+
+  return (
+    <div>
+        <center>
+          <h1>Fcomp4: Developer name is {name}</h1>
+        </center>
+    </div>
+  )
+}
+
+export default Fcomp4
+```
+4. after run this for local hosting
+```
+npm run dev
+```
+6. output
+<img width="540" height="433" alt="image" src="https://github.com/user-attachments/assets/12b7521d-f04b-444a-8bb2-84f7c9735240" />
 
 ## Reference
 - [npmjs](https://www.npmjs.com/package/create-react-app)
