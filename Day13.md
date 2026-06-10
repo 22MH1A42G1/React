@@ -262,7 +262,12 @@ const Fcomp4 = () => {
 
 export default Fcomp4
 ```
-4. after run `npm run dev` for local hosting
+4. after run this for local hosting
+```
+npm run dev
+```
+6. output
+<img width="540" height="433" alt="image" src="https://github.com/user-attachments/assets/12b7521d-f04b-444a-8bb2-84f7c9735240" />
 
 ## Reference
 - [npmjs](https://www.npmjs.com/package/create-react-app)
