@@ -21,7 +21,11 @@ import './App.css';
 // import BSComp1 from './BSComp1';
 // import ImgComp1 from './ImgComp1';
 // import Login from './Login';
-import SignUP from './SignUP';
+// import SignUP from './SignUP';
+// import Comp101 from './Comp101';
+// import ErrComp1 from './ErrComp1';
+import CallbackParent from './CallbackParent';
+
 function App() {
     return (
         <div className="App">
@@ -35,7 +39,10 @@ function App() {
             {/* <BSComp1 /> */}
             {/* <ImgComp1 /> */}
             {/* <Login /> */}
-            <SignUP />
+            {/* <SignUP /> */}
+            {/* <Comp101 /> */}
+            {/* <ErrComp1 /> */}
+            <CallbackParent />
         </div>
     );
 }
