@@ -46,4 +46,6 @@ completed topics
 18.  - [x] storing signup data  into local storage
 19. - [x] context API
 20. - [x] Errors in react
-21. - [x] call back function in class components
+21. - [x] call back functions (parent & child)
+22. - [ ] call back functions in class components
+
