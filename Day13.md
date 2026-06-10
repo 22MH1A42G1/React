@@ -134,6 +134,23 @@ ii. output:
 - decrement
 <img width="230" height="250" alt="image" src="https://github.com/user-attachments/assets/bd6ca1d7-9beb-47d9-8e53-3f698577299e" />
 
+## Vite 
+Vite is a blazing fast frontend build tool powering the next generation of web applications.
+<img width="2361" height="258" alt="vite-frameworks D3X8o4O8" src="https://github.com/user-attachments/assets/36ae672c-61f7-41d4-ad06-c20b5903db7b" />
+**Instant Server Start** : On demand source file serving over native ESM, with blazing fast dependency pre-bundling.
+**Lightning Fast HMR** : Instantly reflect changes as you save, no matter how big your app is.
+
+### steps for start react project
+1. checking versions
+```
+node -v
+npm -v
+```
+2. creating react application
+```
+npm create vite@latest
+```
+
 ## Reference
 - [npmjs](https://www.npmjs.com/package/create-react-app)
 - [vite](https://vite.dev/guide/)
