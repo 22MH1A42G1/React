@@ -1,4 +1,5 @@
 # Day 14
+---
 
 ## Todo.jsx
 
@@ -50,15 +51,21 @@ const Todo = () => {
 
 export default Todo
 ```
-output
+### output
 
 <img width="553" height="315" alt="image" src="https://github.com/user-attachments/assets/6654f353-1b10-4681-891b-fdcf6020c1c5" />
+---
 
 ## tasks
+
 ### 1. task01 (auto suggest)
+
 <img width="471" height="457" alt="image" src="https://github.com/user-attachments/assets/1a72104d-7b11-4afd-b32b-391ec7c0f1f1" />
-If you want auto-suggest course names while typing in your React Todo/Course app, you can use the HTML `<datalist>` element.
+
+- If you want auto-suggest course names while typing in your React Todo/Course app, you can use the HTML `<datalist>` element.
+
 ### task.jsx
+
 ```
 import React, { useState } from 'react'
 
@@ -126,13 +133,17 @@ const Task01 = () => {
 
 export default Task01
 ```
+
 ### output:
 <img width="661" height="502" alt="image" src="https://github.com/user-attachments/assets/f2d017f6-8e4a-4f56-abe2-1bcf37ebf1c3" />
 
 
 ## task 02 (Add checkbox)
+
 <img width="539" height="401" alt="image" src="https://github.com/user-attachments/assets/4eb709f8-1bb6-4081-beb6-926bf718f9fa" />
+
 ### code
+
 ```
 import React, { useState } from 'react'
 
@@ -219,6 +230,8 @@ const Task02 = () => {
 
 export default Task02
 ```
+
 ### output
+
 <img width="666" height="420" alt="image" src="https://github.com/user-attachments/assets/fb214cbe-3467-4f6c-8866-46eda51b6654" />
 
