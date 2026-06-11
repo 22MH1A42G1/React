@@ -57,6 +57,6 @@ output
 taasks
 1. task01
 <img width="471" height="457" alt="image" src="https://github.com/user-attachments/assets/1a72104d-7b11-4afd-b32b-391ec7c0f1f1" />
-2. task 2
-3. 
+2. task 02
+<img width="539" height="401" alt="image" src="https://github.com/user-attachments/assets/4eb709f8-1bb6-4081-beb6-926bf718f9fa" />
 
