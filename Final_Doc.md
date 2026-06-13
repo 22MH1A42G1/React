@@ -1195,9 +1195,11 @@ export default SignUP
 > after submit 
  
 <img width="671" height="359" alt="image" src="https://github.com/user-attachments/assets/c49f5dd3-d2bc-44c4-b849-067c8c7f0dc9" />
+
 ---
 
 # Day 11
+
 ---
 
 ## Data transfer by using Props & State 
