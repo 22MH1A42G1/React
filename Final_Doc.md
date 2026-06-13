@@ -1,9 +1,10 @@
 # Day 01
+
 ---
 
 ## React
 
-React is a JavaScript library for building user interfaces (UIs) on the web. React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
+React is an open-source JavaScript library developed by Meta for building fast, interactive, and reusable user interfaces using components and a Virtual DOM. React is a declarative, component based library that allows developers to build reusable UI components and It follows the Virtual DOM (Document Object Model) approach, which optimizes rendering performance by minimizing DOM updates. React is fast and works well with other tools and libraries.
 
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/5c3df556-db0d-4854-bd56-7d830d020692" />
 
@@ -16,6 +17,7 @@ The HTML DOM (Document Object Model) is a structured representation of a web pag
 ---
 
 # Day 02
+
 ---
 
 ## What is React?
@@ -62,7 +64,9 @@ node -v
 npx create-react-app@latest app2
 ```
 
-Their are 2 types of Components in ReactJS
+There are two main ways to create components in React:
+1. Class Components (older approach)
+2. Functional Components (modern and recommended approach)
 
 #### 1. Class-based
    
@@ -102,7 +106,7 @@ and also change style in **App.css**
 ....
 .App-header {
   background-color: #282c34;
-  min-height: 0; // change 100vh to 0 
+  min-height: 0; /* change 100vh to 0 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,7 +263,7 @@ and also change style in **App.css**
 ---
 
 ## Props
-Props are used to transfer data from one component's state to another.
+Props are used to pass data from a parent component to a child component.
 
 In React, props (short for "properties") are used to pass information from one component to another. The main purpose of props is to allow a parent component to send data to its child components.
 
@@ -376,7 +380,16 @@ completed topics
    - `README.md` --> instructions for how to work or run this project.
 6. what is JSX? (className)
    - Jsx Rules.
-     1. any function / class method returns only one element.
+     1. A React component must return a single root element.
+eg; 
+```
+return (
+  <>
+    <h1>Hello</h1>
+    <p>World</p>
+  </>
+);
+```
    - Rendering elements.
    - understanding parent and child relation.
 7. components
@@ -405,7 +418,8 @@ completed topics
 **setState**
 - click -- Onclick increment & decrement using `setState` eg: Counter.jsx
 - `setState` is used to update the state of the component, it is in-built function to update component state.
-- `setState` is one of the official way to update a component state as and when you update state with setState it triggers the render() method again re-render
+- `setState()` is the built-in method used to update state in class components.
+- When state changes, React re-renders the component. 
 - component is mounted the `render()` method executed, when it called UI.
 - methods are actions on particular event
 - `setState` is a method provided by `React.Component`
@@ -611,8 +625,13 @@ export default Todo;
 
 3.  Within the `render` method, include a label and input field for the course, binding the `onChange` event to `readCourse`. Also, include `onClick` event for `addCourse`, `deleteCourseByIndex` and `deleteCourseByCourseName` methods.
 
-4.  output
-   <img width="1098" height="498" alt="image" src="https://github.com/user-attachments/assets/63808db9-3fe6-4b93-9a63-1d52bcd15d22" />
+4. Keys help React identify which items have changed, been added, or removed.
+Avoid using index as a key when items can be reordered.
+
+5.  output
+
+<img width="1098" height="498" alt="image" src="https://github.com/user-attachments/assets/63808db9-3fe6-4b93-9a63-1d52bcd15d22" />
+
 ---
 
 # Day 08
