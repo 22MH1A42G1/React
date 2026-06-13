@@ -19,7 +19,7 @@ The HTML DOM (Document Object Model) is a structured representation of a web pag
 ---
 
 ## What is React?
-- it is a js library to develop UI
+- React is a component-based JavaScript library developed by Meta for building interactive user interfaces using reusable components and a virtual DOM.
 
 #### React Application Creation Steps
 
