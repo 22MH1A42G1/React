@@ -5,6 +5,7 @@
 React Router is a powerful library for managing routing in React applications, enabling seamless navigation between different views and components.
 
 <img width="664" height="408" alt="image" src="https://github.com/user-attachments/assets/19326b40-9edb-4f4a-9dbe-642964e77d92" />
+<img width="848" height="525" alt="image" src="https://github.com/user-attachments/assets/4691626e-5b5d-4014-a4b2-6cf9bea1d02d" />
 
 👉 Create a React Router application. (React, JavaScript)
 
