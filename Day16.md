@@ -48,16 +48,18 @@ function App() {
 export default App
 ```
 
-- output for Routing Home page (type-01)
+- Routing Home page (type-01) output
 
 <img width="294" height="128" alt="image" src="https://github.com/user-attachments/assets/70a57f5b-6d3b-4d14-b8e7-a76991be2eea" />
 
-👉 for rendering `pages/Home.jsx` page
+👉 for rendering `pages/Home.jsx`, `pages/About.jsx`, `pages/Contact.jsx`  pages
 
 ```jsx
 import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 function App() {
 
   return (
@@ -65,6 +67,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -74,10 +78,17 @@ function App() {
 export default App
 ```
 
-- output for Routing Home page (type-02)
+- Output for Routing Home page
 
 <img width="243" height="144" alt="image" src="https://github.com/user-attachments/assets/104d4f66-3508-45bb-91e1-3dc9a1cc0fcb" />
 
+- Output for Routing About page
+
+<img width="650" height="279" alt="image" src="https://github.com/user-attachments/assets/ca27e126-2e65-4151-9fe5-53fd28423609" />
+
+- Output for Routing Contact page
+
+<img width="632" height="237" alt="image" src="https://github.com/user-attachments/assets/fb916a28-a15b-4f53-bacf-7a36af232b56" />
 
 ## reference docs: 
 - [ReactRouter](https://reactrouter.com/home)
