@@ -31,7 +31,6 @@ npm run dev
 ```jsx
 import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
-// import {Home} from '../pages/Home';
 function App() {
 
   return (
@@ -48,8 +47,36 @@ function App() {
 export default App
 ```
 
-## output 
+- output for Routing Home page (type-01)
+
 <img width="294" height="128" alt="image" src="https://github.com/user-attachments/assets/70a57f5b-6d3b-4d14-b8e7-a76991be2eea" />
+
+👉 for rendering `pages/Home.jsx` page
+
+```jsx
+import './App.css'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import Home from './pages/Home';
+function App() {
+
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
+```
+
+- output for Routing Home page (type-02)
+
+<img width="243" height="144" alt="image" src="https://github.com/user-attachments/assets/104d4f66-3508-45bb-91e1-3dc9a1cc0fcb" />
+
 
 ## reference docs: 
 - [ReactRouter](https://reactrouter.com/home)
