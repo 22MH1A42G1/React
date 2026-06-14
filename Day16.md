@@ -20,6 +20,12 @@ code .
 npm i react-router-dom@6
 ```
 
+👉 run server on local
+
+```
+npm run dev
+```
+
 ## reference docs: 
 - [ReactRouter](https://reactrouter.com/home)
 - [NPM](https://www.npmjs.com/package/@types/react-router)
