@@ -26,6 +26,31 @@ npm i react-router-dom@6
 npm run dev
 ```
 
+👉 Replace the existing code in `App.jsx` with our new code.
+
+```jsx
+import './App.css'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+// import {Home} from '../pages/Home';
+function App() {
+
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<h1>Home page</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
+```
+
+## output 
+<img width="294" height="128" alt="image" src="https://github.com/user-attachments/assets/70a57f5b-6d3b-4d14-b8e7-a76991be2eea" />
+
 ## reference docs: 
 - [ReactRouter](https://reactrouter.com/home)
 - [NPM](https://www.npmjs.com/package/@types/react-router)
