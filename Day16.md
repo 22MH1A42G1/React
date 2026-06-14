@@ -52,7 +52,57 @@ export default App
 
 <img width="294" height="128" alt="image" src="https://github.com/user-attachments/assets/70a57f5b-6d3b-4d14-b8e7-a76991be2eea" />
 
-👉 for rendering `pages/Home.jsx`, `pages/About.jsx`, `pages/Contact.jsx`  pages
+👉 Rendering `pages/Home.jsx`, `pages/About.jsx`, and `pages/Contact.jsx` within `App.jsx`.
+
+**Home.jsx**
+
+```jsx
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>
+        <h1>Home</h1>
+    </div>
+  )
+}
+
+export default Home
+```
+
+**About.jsx**
+
+```jsx
+import React from 'react'
+
+const About = () => {
+  return (
+    <div>
+      <h1>About</h1>
+    </div>
+  )
+}
+
+export default About
+```
+
+**Contact.jsx**
+
+```jsx
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div>
+        <h1>Contact</h1>
+    </div>
+  )
+}
+
+export default Contact
+```
+
+**App.jsx**
 
 ```jsx
 import './App.css'
