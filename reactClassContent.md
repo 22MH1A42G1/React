@@ -48,5 +48,5 @@ completed topics
 20. - [x] Errors in react
 21. - [x] call back functions (parent & child)
 22. - [x] React UseState Hook
-23. - [ ] React Router
+23. - [x] React Router
 
