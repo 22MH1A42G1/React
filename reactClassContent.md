@@ -49,4 +49,5 @@ completed topics
 21. - [x] call back functions (parent & child)
 22. - [x] React UseState Hook
 23. - [x] React Router
-
+24. - [x] React Routing and Navigation
+25. - [x] Dynamic Routing vs Static Routing
