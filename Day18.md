@@ -216,6 +216,10 @@ export default CourseBar
 
 <img width="693" height="254" alt="image" src="https://github.com/user-attachments/assets/556557d3-621b-49b2-a140-c04670b3672f" />
 
+**/Invalid-path**
+
+<img width="719" height="280" alt="image" src="https://github.com/user-attachments/assets/ddfce5a3-079f-47ce-9b9e-773bcd305198" />
+
 ---
 
 # 🔗 Navigation Flow Diagram 
