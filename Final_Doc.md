@@ -2786,6 +2786,8 @@ This project taught me how to set up React Router, connect URL paths to componen
 
 # Day 18 – React Router (Dynamic Routing & Navigation)
 
+---
+
 ## 📌 What is the Topic?
 - **React Router**: A library for handling navigation in React applications.
 - It allows building **Single Page Applications (SPA)** with multiple views without reloading the page.
@@ -2897,6 +2899,7 @@ const Navbar = () => {
         <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/about'>About</NavLink></li>
         <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/contact'>Contact</NavLink></li>
         <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/courses'>Courses</NavLink></li>
+        <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/dashboard'>Dashboard</NavLink></li>
         <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/login'>Login</NavLink></li>
         <li style={{float: 'left', marginRight: '10px'}}><NavLink style={{textDecoration: 'none'}} to='/signup'>Signup</NavLink></li>
       </ul>
@@ -3005,6 +3008,10 @@ export default CourseBar
 
 <img width="719" height="280" alt="image" src="https://github.com/user-attachments/assets/ddfce5a3-079f-47ce-9b9e-773bcd305198" />
 
+**/Dashboard**
+
+<img width="818" height="285" alt="image" src="https://github.com/user-attachments/assets/c4a42e50-eb23-44dd-9f8d-1cf1fdf54e08" />
+
 ---
 
 # 🔗 Navigation Flow Diagram 
@@ -3047,5 +3054,4 @@ App.jsx
   - `CourseBar` is nested navigation.  
   - `Course.jsx` demonstrates **dynamic routing**.  
 - It clarifies how React Router organizes pages without reloading the app.
-
 
