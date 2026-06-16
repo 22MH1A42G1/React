@@ -1,6 +1,10 @@
 
 # Day 18 – React Router (Dynamic Routing & Navigation)
 
+- **Static Routing**: Routes are fixed at build time, defined directly in code, and don’t change unless you redeploy.  
+- **Dynamic Routing**: Routes are generated at runtime, often using parameters (`:id`) or data, making them flexible and scalable.  
+- **Key Difference**: Static is simple but rigid, while dynamic adapts to data and user actions for large, data‑driven apps.  
+
 ## 📌 What is the Topic?
 - **React Router**: A library for handling navigation in React applications.
 - It allows building **Single Page Applications (SPA)** with multiple views without reloading the page.
