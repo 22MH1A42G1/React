@@ -51,3 +51,4 @@ completed topics
 23. - [x] React Router
 24. - [x] React Routing and Navigation
 25. - [x] Dynamic Routing vs Static Routing
+26. - [x] useParams hook
